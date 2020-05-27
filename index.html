@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-
-
 <head>
     
 <title>
@@ -16,46 +13,62 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
+<div class="container-fluid" id="cabeçalho">
+    <div class="row" style="color: rgb(224, 222, 222);">
+        <div class="col-sm-3">
+            <img src="estatistica.png" style="padding-top: 30px ;" alt="Computing" class="img-fluid"> 
+        </div>
+        <div class="col-sm-6">
+             <h1 style="margin-top: 20px;">Atividade de Estatística</h1>
+             <h3 style="margin-bottom: 10px;">Distribuição de frequência</h3>
+       </div>
+       <div class="col-sm-3">
+       </div>
+    </div>
+    
+</div>
 
 </head>
 
 <body>
-    
-    <div class="container-fluid" id="cabeçalho">
-        <div class="row" style="color: rgb(224, 222, 222);">
-            <div class="col-sm-3">
-                <img src="estatistica.png" style="padding-top: 30px ;" alt="Computing" class="img-fluid"> 
-            </div>
-            <div class="col-sm-6">
-                 <h1 style="margin-top: 20px;">Atividade de Estatística</h1>
-                 <h3 style="margin-bottom: 10px;">Calculos de Amplitude</h3>
-           </div>
-           <div class="col-sm-3">
-           </div>
-        </div>
-        
-    </div>
-        
-    <div class="container">
+    <div class="container" id="conteudo">
         <div class="row">
             <div class="col-sm-12">
                 <div class="jumbotron">
+				<h5 style="text-align: center;" id="TESTE">Calculos de Amplitude</h5>
                     <h4 style="text-align: center;">
-                        Coleta de dados
+						Coleta de dados
                     </h4>
                 <br><br>
-                <label for="numeros">Quantidade de Valores: </label>
-                <input type="number" class="form-control" id="numeros" name="numeros">
-                <button type="button" class="btn btn-primary" style="margin-top: 20px">Calcular</button>
-             </div>
+                <form id="formulario">
+                    <input type="number" maxlength="2" placeholder="Digite a quantidade de elementos" class="form-control" 
+                    id="numeros"  name="numeros">
+                    <button type="button" onclick="myFunction()" class="btn btn-primary" style="margin-top: 20px">Calcular</button>
+                 </form>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="conteudo2">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron">
+                    <h5 style="text-align: center">Numeros</h5>
+                    <br><br>
+                    <form id="formulario2">
+                        <h2>BATAATA</h2>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
     
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="jquery.js"></script>
+
 </body>
 
 
-</html>
+</html> 
