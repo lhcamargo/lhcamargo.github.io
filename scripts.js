@@ -9,3 +9,10 @@ function myFunction(){
     y.style.display = "block";
     x.style.display = "none";  
 }
+function voltar(){
+
+  var x = document.getElementById('conteudo');
+  var y = document.getElementById('conteudo2');
+  y.style.display = "none";
+  x.style.display = "block";
+}
