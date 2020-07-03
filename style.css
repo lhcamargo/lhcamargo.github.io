@@ -1,7 +1,305 @@
-#cabeçalho{
-
-    text-align: center;
-    background-color: rgb(81, 81, 190);
-    color: whitesmoke;
+body {
+    background-image: url("https://images.unsplash.com/photo-1502679726485-931beda67f88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=de463bf685e4e3df80b0957fd4a2fa1c&auto=format&fit=crop&w=2255&q=80");
+    background-size: cover;
+    perspective: 700px;
 }
 
+.vingette {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 0 200px 10px rgba(0, 0, 0, 1) inset;
+}
+
+.cachorro {
+    position: relative;
+    left: 5px;
+    bottom: 210px;
+    animation: reverse, infinite;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.world {
+    transform-style: preserve-3d;
+    transform: rotate3d(-5deg, 0, 0, );
+    height: 100vh;
+    position: relative;
+    left: 90px;
+}
+
+.sky {
+    height: 50%;
+    width: 150%;
+    right: 25%;
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(transparent 50%, #e90ef5), radial-gradient(transparent 60%, rgba(36, 99, 245, 0.5)), radial-gradient(ellipse at 50% 200%, #e90ef5, transparent 70%);
+}
+
+.horizon {
+    height: 3px;
+    background-color: #e90ef5;
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to right, #e90ef5, #FFF, #e90ef5);
+}
+
+.floor {
+    transform-origin: 0 0;
+    width: 300%;
+    right: 150%;
+    height: 200vh;
+    transform: rotateX(90deg);
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.flare {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(transparent, #FFF);
+    animation: topToBottom 10s linear infinite;
+}
+
+.sun {
+    height: 70px;
+    background-image: radial-gradient(closest-side, #FFF, transparent);
+    position: relative;
+    bottom: 40px;
+}
+
+.grid {
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 24px, #A500B1 26px, #e90ef5 26px, #e90ef5 28px, #A500B1 28px, transparent 30px), repeating-linear-gradient(-90deg, transparent, transparent 24px, #A500B1 26px, #EC6AF5 26px, #EC6AF5 28px, #A500B1 28px, transparent 30px);
+    background-size: 30px 30px;
+    animation: animatedBackground 10s linear infinite;
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 300px;
+    }
+}
+
+@keyframes topToBottom {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+.houses {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.house {
+    height: 170px;
+    width: 50px;
+    position: relative;
+}
+
+.house-1 {
+    height: 100px;
+}
+
+.house-2 {
+    height: 80px;
+}
+
+.house--wall {
+    transform-origin: 0 0;
+    border: 2px solid #2463F5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(200, 200, 255, 0.5);
+}
+
+.house--wall-back {
+    transform: translateZ(-50px);
+}
+
+.house--wall-right {
+    transform: rotateY(90deg);
+}
+
+.house--wall-left {
+    transform-origin: 100% 0;
+    transform: rotateY(-90deg);
+}
+
+.palms {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    background-image: url("http://i.imgur.com/R5V0kyd.png");
+    background-size: 75px;
+    filter: brightness(0);
+}
+
+.text {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    width: 75vw;
+    height: 50vh;
+    top: 5vh;
+    transform: translateZ(50px);
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-animated {
+    animation: animatedText 3s linear infinite;
+}
+
+.text-animated1 {
+    animation: animatedText 3s linear infinite 1s;
+}
+
+.text-animated2 {
+    animation: animatedText 3s linear infinite 2s;
+}
+
+@keyframes animatedText {
+    0% {
+        transform: translateZ(200px);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateZ(100px);
+        opacity: 0;
+    }
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.text-new {
+    font-family: 'Kanit', sans-serif;
+    font-size: 10vmin;
+    transform: skew(-20deg, 0);
+    position: absolute;
+    color: #FC0;
+    left: 0;
+    top: 5%;
+    background-image: linear-gradient( #EC6AF5 35%, transparent 35%, transparent 47%, #EC6AF5 47%, #EC6AF5 52%, transparent 52%, transparent 62%, #EC6AF5 62%, #EC6AF5 66%, transparent 66%, transparent 70%, #EC6AF5 70%, #EC6AF5 75%, transparent 75%, transparent 77%, #EC6AF5 77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-retro {
+    position: relative;
+    font-size: 24vmin;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.text-wave {
+    position: absolute;
+    font-family: 'Mr Dafoe', cursive;
+    color: #ff4da6;
+    left: 50%;
+    top: 55%;
+    transform: rotateZ(-20deg);
+    font-size: 5.5vmin;
+}
+
+.text-wave1 {
+    position: absolute;
+    font-family: 'Mr Dafoe', cursive;
+    color: #ff4da6;
+    left: 55%;
+    top: 65%;
+    transform: rotateZ(-20deg);
+    font-size: 5.5vmin;
+}
+
+.text-wave2 {
+    position: absolute;
+    font-family: 'Mr Dafoe', cursive;
+    color: #ff4da6;
+    left: 50%;
+    top: 71%;
+    transform: rotateZ(-20deg);
+    font-size: 5.5vmin;
+}
+
+.text1 {
+    z-index: 1;
+    top: 15%;
+    position: absolute;
+    text-align: center;
+    transform: translateZ(200px);
+    font-family: 'Permanent Marker', cursive;
+    color: #FFF;
+    font-size: 10vh;
+}
+
+.audio {
+    background-color: none;
+    bottom: 10cm;
+    right: 50%;
+}
+
+.text2 {
+    z-index: 2;
+    transform: translateZ(250px);
+}
+
+.text3 {
+    z-index: 3;
+    transform: translateZ(300px);
+}
+
+.text2 .text-retro,
+.text3 .text-retro {
+    color: transparent;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Saira:700');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
