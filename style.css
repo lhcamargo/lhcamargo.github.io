@@ -336,3 +336,134 @@ body {
         color: #1bf807;
     }
 }
+@media only screen and (max-width: 1349px) {
+    body {
+        background-image: url("https://images.unsplash.com/photo-1502679726485-931beda67f88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=de463bf685e4e3df80b0957fd4a2fa1c&auto=format&fit=crop&w=2255&q=80");
+        background-size: 150%;
+        perspective: 800px;
+        overflow: hidden;
+    }
+    .cachorro {
+        position: relative;
+        left: 5px;
+        bottom: 210px;
+        animation: reverse, infinite;
+    }
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 110%;
+        height: 50vh;
+        background-image: linear-gradient(transparent 50%, #e90ef5), radial-gradient(transparent 60%, rgba(36, 99, 245, 0.5)), radial-gradient(ellipse at 50% 200%, #e90ef5, transparent 70%);
+    }
+    .text-retro {
+        position: relative;
+        font-size: 15vmin;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .text {
+        z-index: 1;
+        position: absolute;
+        text-align: center;
+        width: 60vw;
+        height: 50vh;
+        top: -8vh;
+        left: 5vh;
+        transform: translateZ(20px);
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-size-adjust: 20px;
+    }
+    .text3 {
+        bottom: 5vh;
+        z-index: 3;
+        transform: translateZ(100px);
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #000;
+        font-size: 10em;
+        color: #fffdd9;
+    }
+    .text-wave {
+        position: absolute;
+        font-family: 'Mr Dafoe', cursive;
+        color: #ff4da6;
+        left: 10%;
+        top: 60%;
+        font-size: 10vmin;
+    }
+    .text-wave1 {
+        position: absolute;
+        font-family: 'Mr Dafoe', cursive;
+        color: #ff4da6;
+        left: 40%;
+        top: 70%;
+        font-size: 10vmin;
+    }
+    .text-wave2 {
+        position: absolute;
+        font-family: 'Mr Dafoe', cursive;
+        color: #ff4da6;
+        left: 10%;
+        top: 80%;
+        font-size: 10vmin;
+    }
+    .houses {
+        left: 15%;
+        width: 110%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: absolute;
+    }
+    .house {
+        height: 170px;
+        width: 50px;
+        position: relative;
+    }
+    .house-1 {
+        height: 100px;
+    }
+    .house-2 {
+        height: 80px;
+    }
+    .house--wall {
+        transform-origin: 0 0;
+        border: 2px solid #2463F5;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px rgba(200, 200, 255, 0.5);
+    }
+    .house--wall-back {
+        transform: translateZ(-50px);
+    }
+    .house--wall-right {
+        transform: rotateY(90deg);
+    }
+    .house--wall-left {
+        transform-origin: 100% 0;
+        transform: rotateY(-90deg);
+    }
+    .palms {
+        width: 110%;
+        height: 75px;
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        background-image: url("http://i.imgur.com/R5V0kyd.png");
+        background-size: 75px;
+        filter: brightness(0);
+    }
+}
