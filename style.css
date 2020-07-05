@@ -1,12 +1,17 @@
+/* Import sempre é o primeiro */
+
+@import url('https://fonts.googleapis.com/css?family=Saira:700');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 body {
     background-image: url("https://images.unsplash.com/photo-1502679726485-931beda67f88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=de463bf685e4e3df80b0957fd4a2fa1c&auto=format&fit=crop&w=2255&q=80");
-    background-size: cover;
+    background-size: 100%;
     perspective: 700px;
+    overflow: hidden;
 }
 
 .vingette {
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+    width: auto;
     position: absolute;
     box-shadow: 0 0 200px 10px rgba(0, 0, 0, 1) inset;
 }
@@ -32,52 +37,65 @@ body {
     transform: rotate3d(-5deg, 0, 0, );
     height: 100vh;
     position: relative;
-    left: 90px;
+    left: 80px;
 }
 
 .sky {
     height: 50%;
-    width: 150%;
+    width: auto;
     right: 25%;
     position: relative;
 }
 
+
+/* fundo (altera o fundo rosa) */
+
 .back {
     position: absolute;
     top: 0;
+    left: 0%;
     width: 100%;
     height: 50vh;
     background-image: linear-gradient(transparent 50%, #e90ef5), radial-gradient(transparent 60%, rgba(36, 99, 245, 0.5)), radial-gradient(ellipse at 50% 200%, #e90ef5, transparent 70%);
 }
 
+
+/* Linha do fundo */
+
 .horizon {
-    height: 3px;
+    height: 1px;
+    max-width: 10%;
     background-color: #e90ef5;
-    position: relative;
+    position: auto;
     z-index: 1;
     background-image: linear-gradient(to right, #e90ef5, #FFF, #e90ef5);
+    left: 35%;
 }
+
+
+/* chão animado */
 
 .floor {
     transform-origin: 0 0;
-    width: 300%;
-    right: 150%;
-    height: 200vh;
+    width: 100%;
+    right: 20%;
+    left: 0.1%;
+    height: 150vh;
     transform: rotateX(90deg);
     background-color: rgba(0, 0, 0, 0.4);
-    position: relative;
+    position: absolute;
 }
 
 .flare {
     position: absolute;
     width: 100%;
-    height: 50px;
+    height: 5000px;
     background-image: linear-gradient(transparent, #FFF);
     animation: topToBottom 10s linear infinite;
 }
 
 .sun {
-    height: 70px;
+    height: 80px;
     background-image: radial-gradient(closest-side, #FFF, transparent);
     position: relative;
     bottom: 40px;
@@ -110,12 +128,14 @@ body {
 }
 
 .houses {
+    left: 20%;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    position: absolute;
 }
 
 .house {
@@ -169,10 +189,11 @@ body {
     z-index: 1;
     position: absolute;
     text-align: center;
-    width: 75vw;
+    width: 60vw;
     height: 50vh;
     top: 5vh;
-    transform: translateZ(50px);
+    left: 35vh;
+    transform: translateZ(20px);
     color: #FFF;
     display: flex;
     align-items: center;
@@ -193,11 +214,11 @@ body {
 
 @keyframes animatedText {
     0% {
-        transform: translateZ(200px);
+        transform: translateZ(100px);
         opacity: 0.4;
     }
     100% {
-        transform: translateZ(100px);
+        transform: translateZ(50px);
         opacity: 0;
     }
 }
@@ -275,7 +296,17 @@ body {
 
 .text3 {
     z-index: 3;
-    transform: translateZ(300px);
+    transform: translateZ(100px);
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    font-size: 3em;
+    color: #fffdd9;
 }
 
 .text2 .text-retro,
@@ -283,5 +314,25 @@ body {
     color: transparent;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Saira:700');
-@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+@-webkit-text-stroke-width: 1px;
+@-webkit-text-stroke-color: #00000;
+
+/* tamanho tela para deixar responsivo */
+
+
+/* Tel computador Saulo */
+
+@media only screen and (max-width: 1349px) {
+    .text {
+        color: #1bf807;
+    }
+}
