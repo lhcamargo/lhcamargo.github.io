@@ -331,11 +331,7 @@ body {
 
 /* Tel computador Saulo */
 
-@media only screen and (max-width: 1349px) {
-    .text {
-        color: #1bf807;
-    }
-}
+
 @media only screen and (max-width: 1349px) {
     body {
         background-image: url("https://images.unsplash.com/photo-1502679726485-931beda67f88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=de463bf685e4e3df80b0957fd4a2fa1c&auto=format&fit=crop&w=2255&q=80");
