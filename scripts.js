@@ -66,9 +66,9 @@ k = Math.sqrt(n); //Numero de Classes
 c = at / k; //Amplitude da Classe
 
 //Exibindo os resultados
-document.write('<h3>Amplitude Total : </h3>', at);
-document.write('<h3>Numero de Classe : </h3>', k);
-document.write('<h3>Amplitude da Classe: </h3>', c);
+getElementById('resultados').innerHTML('<h3>Amplitude Total : </h3>', at);
+getEelementById('resultados').innerHTML('<h3>Numero de Classe : </h3>', k);
+getElementById('resultados').innerHTML('<h3>Amplitude da Classe: </h3>', c);
 
 //Verificação de numeros repetidos no array.
 //document.write('<br><br> Elementos repetidos');
