@@ -23,8 +23,11 @@ world.addEventListener("mousemove", function(e) {
     world.style.transform = "rotateX(" + -XAngle + "deg) rotateY(" + YAngle + "deg)"
 })
 
+
+
 function calculo(){
-//Variaveis.
+
+  //Variaveis.
 var cont =0;
 var n;
 var i = 0;
@@ -34,6 +37,8 @@ var k = 0;
 var c = 0;
 var at = 0;
 var array = new Array(n);
+
+
 
 //Quantidade de elementos sera a mesma quatidade do vetor
 n = parseFloat(prompt('Digite a quantidade de amostragem'));
@@ -54,11 +59,10 @@ for (i = 0; i < n; i++) {
     menor = array[i];
   }
 }
-
 //RESULTADOS DE Nº MAIOR E MENOR.
-document.write('<br>'+'Numero de Amostras: ' + array);
-document.write('<br>O Maior Numero: ' + maior);
-document.write('<br>O Menor Numero: ' + menor);
+getElementById('resultados').innerHTML('<br>'+'Numero de Amostras: ' + array);
+getElementById('resultados').innerHTML('<br>O Maior Numero: ' + maior);
+getElementById('resultados').innerHTML('<br>O Menor Numero: ' + menor);
 
 //CALCULO DO AT,K,C.
 at = maior - menor; //Amplitude Total
@@ -67,7 +71,7 @@ c = at / k; //Amplitude da Classe
 
 //Exibindo os resultados
 getElementById('resultados').innerHTML('<h3>Amplitude Total : </h3>', at);
-getEelementById('resultados').innerHTML('<h3>Numero de Classe : </h3>', k);
+getElementById('resultados').innerHTML('<h3>Numero de Classe : </h3>', k);
 getElementById('resultados').innerHTML('<h3>Amplitude da Classe: </h3>', c);
 
 //Verificação de numeros repetidos no array.
@@ -80,6 +84,6 @@ for(var j = 0; j < array.length; j++){
 			//document.write('<br> Cont'+cont);
 		}
 	}
-}
-}
 
+}
+}
