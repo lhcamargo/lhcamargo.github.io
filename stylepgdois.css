@@ -1,0 +1,200 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1502679726485-931beda67f88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=de463bf685e4e3df80b0957fd4a2fa1c&auto=format&fit=crop&w=2255&q=80");
+    perspective: 700px;
+    overflow-x: hidden;
+    background-repeat: inherit;
+}
+
+#estatistica {
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: #ff4da6;
+    margin-top: 5%;
+    left: 5%;
+    position: absolute;
+    top: 1px;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: #f50d81;
+}
+
+#oqueE {
+    color: #ff4da6;
+    margin-top: 5%;
+    position: absolute;
+    left: 2%;
+    text-align: justify;
+    width: 50%;
+    display: flex;
+    justify-content: 10px;
+    height: 5%;
+    margin-left: 2.5%;
+    margin-bottom: 10%;
+}
+
+#aplicacao {
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: #ff4da6;
+    margin-top: 10%;
+    left: 55%;
+    position: absolute;
+    top: 200px;
+    font-size: 10px;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: #f50d81;
+}
+
+#ondeAplica {
+    color: #ff4da6;
+    margin-top: 5%;
+    position: absolute;
+    left: 40%;
+    text-align: justify;
+    width: 50%;
+    display: flex;
+    justify-content: 10px;
+    height: 5%;
+    margin-left: 2.5%;
+    margin-bottom: 20%;
+    top: 115%;
+}
+
+#dogOculos {
+    position: relative;
+    left: 60%;
+    top: 10%;
+}
+
+#patinhas {
+    position: absolute;
+    top: 103%;
+}
+
+#uti {
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: #ff4da6;
+    margin-top: 10%;
+    left: 55%;
+    position: absolute;
+    top: 400px;
+    font-size: 10px;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: #f50d81;
+}
+
+#utilizacao {
+    color: #ff4da6;
+    margin-top: 5%;
+    position: absolute;
+    left: 40%;
+    text-align: justify;
+    width: 50%;
+    display: flex;
+    justify-content: 10px;
+    height: 5%;
+    margin-left: 2.5%;
+    margin-bottom: 20%;
+    top: 550px;
+}
+
+#livro {
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: #ff4da6;
+    margin-top: 10%;
+    left: 5%;
+    position: absolute;
+    top: 700px;
+    font-size: 10px;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: #f50d81;
+}
+
+#autores {
+    position: absolute;
+    top: 830px;
+    left: 50%;
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: #ff4da6;
+}
+
+#nomesAutores1 {
+    position: absolute;
+    top: 900px;
+    color: #ff4da6;
+    left: 40%;
+}
+
+#nomesAutores2 {
+    position: absolute;
+    top: 900px;
+    color: #ff4da6;
+    left: 60%;
+}
+
+
+/* Efeito glow */
+
+@-webkit-text-stroke-width: 1px;
+@-webkit-text-stroke-color: #00000;
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+
+/*Link não visitado */
+
+a:link {
+    color: #ff4da6;
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+/*Link já visitado*/
+
+a:visited {
+    color: #ff4da6;
+    text-decoration: none;
+}
+
+
+/*Quando o mouse passa por cima*/
+
+a:hover {
+    color: #ff4da6;
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+/*Link ativo/selecionado*/
+
+a:active {
+    color: yellow;
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}

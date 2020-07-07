@@ -16,7 +16,7 @@ body {
     box-shadow: 0 0 200px 10px rgba(0, 0, 0, 1) inset;
 }
 
-.cachorro {
+#cachorro {
     position: relative;
     left: 5px;
     bottom: 210px;
@@ -55,7 +55,7 @@ body {
     top: 0;
     left: 0%;
     width: 100%;
-    height: 50vh;
+    height: 59vh;
     background-image: linear-gradient(transparent 50%, #e90ef5), radial-gradient(transparent 60%, rgba(36, 99, 245, 0.5)), radial-gradient(ellipse at 50% 200%, #e90ef5, transparent 70%);
 }
 
@@ -64,12 +64,12 @@ body {
 
 .horizon {
     height: 1px;
-    max-width: 10%;
+    max-width: 120%;
     background-color: #e90ef5;
-    position: auto;
+    position: relative;
     z-index: 1;
+    left: -5.8%;
     background-image: linear-gradient(to right, #e90ef5, #FFF, #e90ef5);
-    left: 35%;
 }
 
 
@@ -79,7 +79,7 @@ body {
     transform-origin: 0 0;
     width: 100%;
     right: 20%;
-    left: 0.1%;
+    left: -5%;
     height: 150vh;
     transform: rotateX(90deg);
     background-color: rgba(0, 0, 0, 0.4);
@@ -128,7 +128,7 @@ body {
 }
 
 .houses {
-    left: 20%;
+    left: 19.5%;
     width: 100%;
     height: 100%;
     display: flex;
@@ -140,12 +140,12 @@ body {
 
 .house {
     height: 170px;
-    width: 50px;
+    width: 55px;
     position: relative;
 }
 
 .house-1 {
-    height: 100px;
+    height: 110px;
 }
 
 .house-2 {
@@ -180,6 +180,7 @@ body {
     height: 70px;
     position: absolute;
     bottom: 0;
+    left: 20%;
     background-image: url("http://i.imgur.com/R5V0kyd.png");
     background-size: 75px;
     filter: brightness(0);
@@ -246,9 +247,9 @@ body {
     position: absolute;
     font-family: 'Mr Dafoe', cursive;
     color: #ff4da6;
-    left: 50%;
-    top: 55%;
-    transform: rotateZ(-20deg);
+    left: 40%;
+    top: 63%;
+    transform: rotateZ(0deg);
     font-size: 5.5vmin;
 }
 
@@ -256,19 +257,19 @@ body {
     position: absolute;
     font-family: 'Mr Dafoe', cursive;
     color: #ff4da6;
-    left: 55%;
-    top: 65%;
-    transform: rotateZ(-20deg);
-    font-size: 5.5vmin;
+    left: 45.7%;
+    top: 70%;
+    transform: rotateZ(0deg);
+    font-size: 4.5vmin;
 }
 
 .text-wave2 {
     position: absolute;
     font-family: 'Mr Dafoe', cursive;
     color: #ff4da6;
-    left: 50%;
-    top: 71%;
-    transform: rotateZ(-20deg);
+    left: 40%;
+    top: 75%;
+    transform: rotateZ(0deg);
     font-size: 5.5vmin;
 }
 
@@ -323,6 +324,71 @@ body {
     }
 }
 
+
+/*Link não visitado */
+
+a:link {
+    color: #ff4da6;
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+/*Link já visitado*/
+
+a:visited {
+    color: #ff4da6;
+    text-decoration: none;
+}
+
+
+/*Quando o mouse passa por cima*/
+
+a:hover {
+    color: #ff4da6;
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+/*Link ativo/selecionado*/
+
+a:active {
+    color: yellow;
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#resultado {
+    color: #ff4da6;
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+/* Tabela */
+
+tbody {
+    position: absolute;
+    text-align: center;
+    color: #ff4da6;
+}
+
+#edicaotabela {
+    position: absolute;
+    color: #ff4da6;
+    left: 40%;
+    top: 300%;
+}
+
 @-webkit-text-stroke-width: 1px;
 @-webkit-text-stroke-color: #00000;
 
@@ -330,7 +396,6 @@ body {
 
 
 /* Tel computador Saulo */
-
 
 @media only screen and (max-width: 1349px) {
     body {
@@ -349,8 +414,8 @@ body {
         position: absolute;
         top: 0;
         left: 0%;
-        width: 110%;
-        height: 50vh;
+        width: 130%;
+        height: 55vh;
         background-image: linear-gradient(transparent 50%, #e90ef5), radial-gradient(transparent 60%, rgba(36, 99, 245, 0.5)), radial-gradient(ellipse at 50% 200%, #e90ef5, transparent 70%);
     }
     .text-retro {
@@ -413,7 +478,7 @@ body {
         font-size: 10vmin;
     }
     .houses {
-        left: 15%;
+        left: 19%;
         width: 110%;
         height: 100%;
         display: flex;
@@ -457,9 +522,26 @@ body {
         height: 75px;
         position: absolute;
         bottom: 0;
-        left: 15%;
+        left: 18%;
         background-image: url("http://i.imgur.com/R5V0kyd.png");
         background-size: 75px;
         filter: brightness(0);
+    }
+    .floor {
+        transform-origin: 0 0;
+        width: 120%;
+        right: 20%;
+        left: -10%;
+        height: 50vh;
+        transform: rotateX(90deg);
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+    }
+    .flare {
+        position: absolute;
+        width: 110%;
+        height: 40px;
+        background-image: linear-gradient(transparent, #FFF);
+        animation: topToBottom 10s linear infinite;
     }
 }
